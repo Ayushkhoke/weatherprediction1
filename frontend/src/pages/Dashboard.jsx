@@ -21,7 +21,7 @@ export default function Dashboard(){
           onResult={setWeatherResult}
           onCityChange={setSelectedCity}
         />
-        <WeeklyForecast selectedCity={selectedCity} />
+        <WeeklyForecast weatherResult={weatherResult} selectedCity={selectedCity} />
       </aside>
     </div>
   )

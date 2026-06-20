@@ -9,6 +9,8 @@ def fetch_live_weather(lat: float, lon: float) -> dict:
         "latitude": lat,
         "longitude": lon,
         "hourly": "temperature_2m,relativehumidity_2m,pressure_msl,cloudcover,precipitation,wind_speed_10m",
+        "daily": "temperature_2m_max,temperature_2m_min,weathercode",
+        "forecast_days": 7,
         "current_weather": True,
         "timezone": "UTC",
     }
